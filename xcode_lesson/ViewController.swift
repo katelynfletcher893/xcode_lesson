@@ -9,11 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mybakery: UILabel!
+    @IBOutlet weak var recipes: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func submitbuttonpressed(_ sender: UIButton) { if let newTitle = recipes.text { mybakery.text = newTitle }
+    }
+    
 }
 
